@@ -1,17 +1,8 @@
-# File:   Plot.R
-# Course: R: An Introduction (with RStudio)
 
-# LOAD DATASETS PACKAGES ###################################
-
-library(datasets)  # Load/unload base packages manually
-
-# LOAD DATA ################################################
-
+library(datasets) 
 head(iris)
 
 # PLOT DATA WITH PLOT() ####################################
-
-#?plot  # Help for plot()
 
 plot(iris$Species)  # Categorical variable
 plot(iris$Petal.Length)  # Quantitative variable
@@ -43,14 +34,8 @@ plot(dnorm, -3, +3,
 
 # CLEAN UP #################################################
 
-# Clear packages
+
 detach("package:datasets", unload = TRUE)
-
-# Clear plots
-dev.off()  # But only if there IS a plot
-
-# Clear console
-cat("\014")  # ctrl+L
-
-# Clear mind :)
+dev.off()
+cat("\014")
 

@@ -1,4 +1,0 @@
-Plot : Adapts to data types & number of variable which means works everywhere.
-Barchart : Most basic graphics for the most basic data.
-Histogram : For data taht is quantative, scaled , measured, interal or ratio level ---> It helps with seeing : The shape of the distribution (symmetrical , skewed , uni-modal , bi-moda ...etc) - The gaps in the distribution - The outliers - Symmetry
-ScatterPlot : For visualize thhhe association between two quantitative variable ---> It helpps with seeing : The association between the two variables if it is Linear because most procesdures that we do assume linearity - If we have Consistent spread across the scores as you go from one end to the x axis to another - Outliers - correlation (is there an association between these two variables)

@@ -1,13 +1,5 @@
-# File:   Histograms.R
-# Course: R: An Introduction (with RStudio)
-
-# LOAD PACKAGES ############################################
 
 library(datasets)
-
-# LOAD DATA ################################################
-
-#?iris
 head(iris)
 
 # BASIC HISTOGRAMS #########################################
@@ -21,6 +13,7 @@ hist(iris$Petal.Width)
 
 # Put graphs in 3 rows and 1 column
 par(mfrow = c(3, 1)) #par for parameters
+
 
 # Histograms for each species using options
 hist(iris$Petal.Width [iris$Species == "setosa"],
@@ -49,13 +42,7 @@ par(mfrow=c(1, 1))
 
 # CLEAN UP #################################################
 
-# Clear packages
 detach("package:datasets", unload = TRUE)  # For base
+dev.off() 
+cat("\014") 
 
-# Clear plots
-dev.off()  # But only if there IS a plot
-
-# Clear console
-cat("\014")  # ctrl+L
-
-# Clear mind :)
